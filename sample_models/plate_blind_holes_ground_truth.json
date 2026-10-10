@@ -1,0 +1,21 @@
+{
+  "model_id": "plate_blind_holes",
+  "description": "Plate with 2 blind holes (flat-bottom)",
+  "expected_features": {
+    "holes": [
+      {
+        "type": "blind",
+        "diameter_mm": 10.0,
+        "depth_mm": 15.0
+      },
+      {
+        "type": "blind",
+        "diameter_mm": 8.0,
+        "depth_mm": 18.0
+      }
+    ],
+    "total_holes_count": 2
+  },
+  "step_file": "plate_blind_holes.step",
+  "schema_version": "1.0.0"
+}

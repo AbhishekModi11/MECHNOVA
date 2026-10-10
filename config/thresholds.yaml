@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+
+thresholds:
+  min_wall_thickness_mm: 1.5
+  slot_aspect_ratio_min: 2.5
+  min_feature_size_mm: 1.0
+  peck_drill_ratio_threshold: 3.0  # depth / diameter > 3.0 requires peck drilling
+  
+  # CAM heights relative to feature or stock top
+  safe_clearance_z_mm: 5.0
+  rapid_traverse_z_mm: 10.0
+  retract_z_mm: 2.0
+  
+  # Step parameters
+  default_stepdown_fraction: 0.5  # fraction of tool diameter
+  default_stepover_fraction: 0.6  # fraction of tool diameter
+  finish_stock_allowance_mm: 0.3  # stock left for finishing pass
+  
+  # Stock bounding box margin default
+  stock_allowance_xy_mm: 4.0
+  stock_allowance_z_top_mm: 2.0
+  stock_allowance_z_bottom_mm: 5.0
+  
+  # Confidence scoring threshold
+  uncertain_confidence_threshold: 0.70

@@ -1,0 +1,35 @@
+{
+  "model_id": "bracket_demo",
+  "description": "Complete Demo Mounting Bracket with 4 mounting through holes, 1 pocket, and 1 slot",
+  "expected_features": {
+    "holes": [
+      {
+        "type": "through",
+        "diameter_mm": 6.0,
+        "depth_mm": 20.0,
+        "count": 4
+      }
+    ],
+    "pockets": [
+      {
+        "type": "closed",
+        "width_mm": 20.0,
+        "length_mm": 30.0,
+        "depth_mm": 10.0
+      }
+    ],
+    "slots": [
+      {
+        "type": "closed",
+        "width_mm": 8.0,
+        "length_mm": 24.0,
+        "depth_mm": 6.0
+      }
+    ],
+    "total_holes_count": 4,
+    "total_pockets_count": 1,
+    "total_slots_count": 1
+  },
+  "step_file": "bracket_demo.step",
+  "schema_version": "1.0.0"
+}

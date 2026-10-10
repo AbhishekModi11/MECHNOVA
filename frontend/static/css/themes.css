@@ -1,0 +1,201 @@
+/* =========================================================================
+   MECHNOVA THEME SYSTEM
+   Rule: Every PERCENTAGE visual uses the theme accent (--accent, --accent-soft, --accent-contrast).
+   Condition indicators (tool wear, READY / CAUTION / MISSING chips) keep fixed
+   green / amber / red because those colours carry industrial safety meaning.
+   ========================================================================= */
+
+/* Default fallback */
+:root {
+  --accent: #1D7147;
+  --accent-soft: #EDF8F2;
+  --accent-contrast: #ffffff;
+  --accent-900: #0F301E;
+  --accent-700: #134F31;
+  --accent-600: #1D7147;
+  --accent-300: #55A878;
+  --accent-50:  #EDF8F2;
+  --accent-swatch: #0D4128;
+}
+
+/* 1. Forest / Green Theme */
+html[data-accent="forest"], html[data-theme="green"], :root[data-theme="green"] {
+  --accent: #1D7147;
+  --accent-soft: #EDF8F2;
+  --accent-contrast: #ffffff;
+  --accent-900: #0F301E;
+  --accent-700: #134F31;
+  --accent-600: #1D7147;
+  --accent-300: #55A878;
+  --accent-50:  #EDF8F2;
+  --accent-swatch: #0D4128;
+}
+
+/* 2. Ocean / Navy Theme */
+html[data-accent="ocean"], html[data-theme="navy"], :root[data-theme="navy"] {
+  --accent: #204C9E;
+  --accent-soft: #EDF8F6;
+  --accent-contrast: #ffffff;
+  --accent-900: #0F234A;
+  --accent-700: #143B7A;
+  --accent-600: #204C9E;
+  --accent-300: #567CB9;
+  --accent-50:  #EDF8F6;
+  --accent-swatch: #11356D;
+}
+
+/* 3. Plum / Purple Theme */
+html[data-accent="plum"], html[data-theme="purple"], :root[data-theme="purple"] {
+  --accent: #4F2E85;
+  --accent-soft: #F6EDF8;
+  --accent-contrast: #ffffff;
+  --accent-900: #2D144F;
+  --accent-700: #3E1F6B;
+  --accent-600: #4F2E85;
+  --accent-300: #8E6BC9;
+  --accent-50:  #F6EDF8;
+  --accent-swatch: #4F2E85;
+}
+
+/* 4. Ember / Brown Theme */
+html[data-accent="ember"], html[data-theme="brown"], :root[data-theme="brown"] {
+  --accent: #843413;
+  --accent-soft: #F8EFED;
+  --accent-contrast: #ffffff;
+  --accent-900: #4F1E0B;
+  --accent-700: #69270F;
+  --accent-600: #843413;
+  --accent-300: #C96E49;
+  --accent-50:  #F8EFED;
+  --accent-swatch: #843413;
+}
+
+/* Override Quasar primary variables with active accent */
+:root {
+  --q-primary: var(--accent);
+}
+
+/* All percentage visuals use theme accent */
+.q-uploader__file-progress,
+.q-linear-progress__model,
+.theme-progress-fill {
+  background: var(--accent) !important;
+  color: var(--accent-contrast) !important;
+}
+
+.theme-progress-track {
+  background: var(--accent-soft) !important;
+}
+
+.theme-pct-badge {
+  background: var(--accent) !important;
+  color: var(--accent-contrast) !important;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Quasar uploader custom theme styling: replace fixed blue */
+/* Quasar uploader custom theme styling: replace fixed blue */
+.q-uploader {
+  border-color: var(--border) !important;
+}
+
+.q-uploader__header {
+  background-color: var(--accent-600) !important;
+  color: var(--accent-contrast) !important;
+}
+
+.q-uploader .q-linear-progress {
+  color: var(--accent) !important;
+}
+
+.q-uploader__file-status {
+  color: var(--accent-contrast) !important;
+}
+
+/* Active sidebar item styling driven by CSS variable */
+.sidebar-nav-item {
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.sidebar-nav-item:hover {
+  background-color: var(--accent-50);
+}
+.sidebar-nav-item.sidebar-active {
+  background-color: var(--accent-soft) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  font-weight: 700 !important;
+}
+.sidebar-nav-item.sidebar-active .q-icon,
+.sidebar-nav-item.sidebar-active i {
+  color: var(--accent) !important;
+}
+.sidebar-nav-item.sidebar-active .item-title,
+.sidebar-nav-item.sidebar-active .q-item__label {
+  color: var(--accent) !important;
+  font-weight: 700 !important;
+}
+
+/* Buttons and Badges */
+.btn-primary, .btn-accent {
+  background: var(--accent) !important;
+  color: var(--accent-contrast) !important;
+  border: 1px solid var(--accent) !important;
+}
+.btn-primary:hover, .btn-accent:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+/* Stepper indicators filled with theme color */
+.step-badge-active {
+  background-color: var(--accent) !important;
+  color: var(--accent-contrast) !important;
+  border-color: var(--accent) !important;
+}
+
+/* Theme dot switcher */
+.theme-dot-btn {
+  border-radius: 9999px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+.theme-dot-btn:hover {
+  transform: scale(1.15);
+}
+.theme-dot-btn.theme-dot-active {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--accent) !important;
+  opacity: 1 !important;
+}
+
+/* Print styling for final job slip */
+@media print {
+  header,
+  aside,
+  .q-drawer,
+  .back-btn,
+  button,
+  .theme-switcher,
+  .no-print {
+    display: none !important;
+  }
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .glass-panel {
+    border: 1px solid #ccc !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+  .print-page {
+    page-break-after: always;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

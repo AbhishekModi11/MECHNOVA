@@ -1,0 +1,14 @@
+python-version = "3.11"
+
+search_path = [
+    "src",
+]
+
+[errors]
+untyped-import = "ignore"
+missing-attribute = "ignore"
+read-only = "ignore"
+missing-module-attribute = "ignore"
+no-access = "ignore"
+bad-argument-type = "ignore"
+no-matching-overload = "ignore"

@@ -1,0 +1,25 @@
+{
+  "model_id": "slots_various",
+  "description": "Model with closed slot and through slot",
+  "expected_features": {
+    "slots": [
+      {
+        "type": "closed",
+        "width_mm": 8.0,
+        "length_mm": 30.0,
+        "depth_mm": 8.0,
+        "aspect_ratio": 3.75
+      },
+      {
+        "type": "through",
+        "width_mm": 6.0,
+        "length_mm": 25.0,
+        "depth_mm": 25.0,
+        "aspect_ratio": 4.16
+      }
+    ],
+    "total_slots_count": 2
+  },
+  "step_file": "slots_various.step",
+  "schema_version": "1.0.0"
+}

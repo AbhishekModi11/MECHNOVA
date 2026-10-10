@@ -1,0 +1,129 @@
+/* Tool Condition Laser Scanner Sweep */
+@keyframes laser-sweep {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 96%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+.scanner-beam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-300), #ffffff, var(--accent-300), transparent);
+  box-shadow: 0 0 12px var(--accent-600);
+  animation: laser-sweep 1.8s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Tool Change Slide Animations */
+@keyframes tool-slide-out {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) scale(0.85);
+    opacity: 0;
+  }
+}
+
+@keyframes tool-slide-in {
+  0% {
+    transform: translateY(80px) scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-out {
+  animation: tool-slide-out 0.6s forwards cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-slide-in {
+  animation: tool-slide-in 0.6s forwards cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle pulse for working machine badges */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 113, 71, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(29, 113, 71, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 113, 71, 0);
+  }
+}
+
+.pulse-working {
+  animation: pulse-ring 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* Worker Mode Holographic Transition */
+@keyframes spindle-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spindle-spin {
+  animation: spindle-spin 1.2s linear infinite;
+}
+
+@keyframes worker-hud-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(29, 113, 71, 0.5), inset 0 0 15px rgba(29, 113, 71, 0.3);
+    border-color: var(--accent-600);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(29, 113, 71, 0.8), inset 0 0 25px rgba(29, 113, 71, 0.5);
+    border-color: var(--accent-300);
+  }
+}
+
+.worker-mode-hud {
+  animation: worker-hud-glow 2s ease-in-out infinite;
+}
+
+@keyframes scanline-pass {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.scanline-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(180deg, transparent, var(--accent-300), transparent);
+  opacity: 0.6;
+  animation: scanline-pass 2.2s linear infinite;
+  pointer-events: none;
+}
+
+/* 3D Canvas Background Container */
+#bg-canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}

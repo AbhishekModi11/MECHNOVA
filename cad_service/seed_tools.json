@@ -1,0 +1,17 @@
+[
+ {"id":"FM-63-5I","name":"Face mill 63 mm, 5 inserts","type":"face_mill","diameter":63,"flutes":5,"coating":"uncoated","flute_length":0,"qty":1,"wear_pct":25,"location":"T01","status":"AVAILABLE"},
+ {"id":"FM-50-4I","name":"Face mill 50 mm, 4 inserts","type":"face_mill","diameter":50,"flutes":4,"coating":"uncoated","flute_length":0,"qty":1,"wear_pct":60,"location":"T02","status":"AVAILABLE"},
+ {"id":"EM-20-3F-U","name":"Carbide end mill 20 mm, 3 flute","type":"end_mill","diameter":20,"flutes":3,"coating":"uncoated","flute_length":45,"qty":1,"wear_pct":15,"location":"T03","status":"AVAILABLE"},
+ {"id":"EM-16-3F-Z","name":"Carbide end mill 16 mm, 3 flute","type":"end_mill","diameter":16,"flutes":3,"coating":"ZrN","flute_length":38,"qty":1,"wear_pct":30,"location":"T04","status":"AVAILABLE"},
+ {"id":"EM-12-3F-Z","name":"Carbide end mill 12 mm, 3 flute","type":"end_mill","diameter":12,"flutes":3,"coating":"ZrN","flute_length":26,"qty":2,"wear_pct":35,"location":"T05","status":"AVAILABLE"},
+ {"id":"EM-10-3F-U","name":"Carbide end mill 10 mm, 3 flute","type":"end_mill","diameter":10,"flutes":3,"coating":"uncoated","flute_length":22,"qty":1,"wear_pct":85,"location":"T06","status":"AVAILABLE"},
+ {"id":"EM-10-4F-T","name":"Carbide end mill 10 mm, 4 flute","type":"end_mill","diameter":10,"flutes":4,"coating":"TiAlN","flute_length":22,"qty":1,"wear_pct":20,"location":"T07","status":"AVAILABLE"},
+ {"id":"EM-8-3F-Z","name":"Carbide end mill 8 mm, 3 flute","type":"end_mill","diameter":8,"flutes":3,"coating":"ZrN","flute_length":19,"qty":1,"wear_pct":10,"location":"T08","status":"AVAILABLE"},
+ {"id":"EM-6-3F-U","name":"Carbide end mill 6 mm, 3 flute","type":"end_mill","diameter":6,"flutes":3,"coating":"uncoated","flute_length":13,"qty":2,"wear_pct":40,"location":"T09","status":"AVAILABLE"},
+ {"id":"DR-10-C","name":"Carbide drill 10 mm","type":"drill","diameter":10,"flutes":2,"coating":"uncoated","flute_length":50,"qty":1,"wear_pct":55,"location":"T10","status":"AVAILABLE"},
+ {"id":"DR-8-C","name":"Carbide drill 8 mm","type":"drill","diameter":8,"flutes":2,"coating":"uncoated","flute_length":40,"qty":1,"wear_pct":20,"location":"T11","status":"AVAILABLE"},
+ {"id":"DR-6-C","name":"Carbide drill 6 mm","type":"drill","diameter":6,"flutes":2,"coating":"uncoated","flute_length":28,"qty":1,"wear_pct":10,"location":"T12","status":"AVAILABLE"},
+ {"id":"SD-10-90","name":"Spot drill 90 deg, 10 mm","type":"spot_drill","diameter":10,"flutes":2,"coating":"uncoated","flute_length":0,"qty":1,"wear_pct":30,"location":"T13","status":"AVAILABLE"},
+ {"id":"CH-12-90","name":"Chamfer mill 90 deg, 12 mm","type":"chamfer","diameter":12,"flutes":3,"coating":"uncoated","flute_length":0,"qty":1,"wear_pct":70,"location":"T14","status":"AVAILABLE"},
+ {"id":"CH-8-90","name":"Chamfer mill 90 deg, 8 mm","type":"chamfer","diameter":8,"flutes":3,"coating":"uncoated","flute_length":0,"qty":1,"wear_pct":5,"damaged":true,"location":"T15","status":"AVAILABLE"}
+]

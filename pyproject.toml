@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cad-cnc-engine"
+version = "0.1.0"
+description = "Automated CAD-to-CNC Optimization Engine for B-Rep feature recognition and CAM planning"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "MECHNOVA CAD/CAM Team" }
+]
+dependencies = [
+    "cadquery-ocp>=7.9.3",
+    "cadquery>=2.8.0",
+    "shapely>=2.0.0",
+    "pyclipper>=1.3.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "trimesh>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+cadcnc = "cadcnc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyright]
+include = ["src", "platform/backend", "frontend", "tests"]
+extraPaths = [
+    "src",
+    "platform/backend",
+    "frontend",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src",
+    "platform/backend",
+    "frontend",
+]
+
+[tool.pyrefly]
+search_path = ["src"]
+
+[tool.pyrefly.errors]
+untyped-import = "ignore"
+missing-attribute = "ignore"
+read-only = "ignore"
+missing-module-attribute = "ignore"
+no-access = "ignore"
+bad-argument-type = "ignore"
+no-matching-overload = "ignore"
+

@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "disclaimer": "All cutting speeds and feeds are reference starting points only. They are not certified or validated for specific production setups.",
+  "materials": {
+    "aluminum_6061": {
+      "id": "aluminum_6061",
+      "name": "Aluminum 6061-T6",
+      "category": "non_ferrous",
+      "hardness_hb": 95,
+      "density_g_cm3": 2.7,
+      "machinability_rating": 1.0,
+      "cutting_data": {
+        "carbide": {
+          "cutting_speed_m_min": 250.0,
+          "chip_load_drill_mm_flute": 0.08,
+          "chip_load_mill_mm_tooth": 0.05,
+          "plunge_factor": 0.4
+        },
+        "hss": {
+          "cutting_speed_m_min": 80.0,
+          "chip_load_drill_mm_flute": 0.05,
+          "chip_load_mill_mm_tooth": 0.03,
+          "plunge_factor": 0.4
+        }
+      },
+      "source": "Machinery's Handbook 31st Edition & Sandvik Coromant General Milling Reference",
+      "data_quality": "starting_value_not_validated"
+    },
+    "mild_steel_1018": {
+      "id": "mild_steel_1018",
+      "name": "Mild Steel AISI 1018",
+      "category": "ferrous",
+      "hardness_hb": 126,
+      "density_g_cm3": 7.87,
+      "machinability_rating": 0.78,
+      "cutting_data": {
+        "carbide": {
+          "cutting_speed_m_min": 150.0,
+          "chip_load_drill_mm_flute": 0.06,
+          "chip_load_mill_mm_tooth": 0.04,
+          "plunge_factor": 0.3
+        },
+        "hss": {
+          "cutting_speed_m_min": 30.0,
+          "chip_load_drill_mm_flute": 0.04,
+          "chip_load_mill_mm_tooth": 0.02,
+          "plunge_factor": 0.3
+        }
+      },
+      "source": "Machinery's Handbook 31st Edition Carbon Steels",
+      "data_quality": "starting_value_not_validated"
+    },
+    "stainless_steel_304": {
+      "id": "stainless_steel_304",
+      "name": "Austenitic Stainless Steel AISI 304",
+      "category": "stainless",
+      "hardness_hb": 180,
+      "density_g_cm3": 8.0,
+      "machinability_rating": 0.45,
+      "cutting_data": {
+        "carbide": {
+          "cutting_speed_m_min": 90.0,
+          "chip_load_drill_mm_flute": 0.04,
+          "chip_load_mill_mm_tooth": 0.03,
+          "plunge_factor": 0.25
+        },
+        "hss": {
+          "cutting_speed_m_min": 18.0,
+          "chip_load_drill_mm_flute": 0.025,
+          "chip_load_mill_mm_tooth": 0.015,
+          "plunge_factor": 0.25
+        }
+      },
+      "source": "Machinery's Handbook 31st Edition Austenitic Stainless Group",
+      "data_quality": "starting_value_not_validated"
+    },
+    "plastic_abs": {
+      "id": "plastic_abs",
+      "name": "Acrylonitrile Butadiene Styrene (ABS)",
+      "category": "polymer",
+      "hardness_hb": 30,
+      "density_g_cm3": 1.05,
+      "machinability_rating": 1.5,
+      "cutting_data": {
+        "carbide": {
+          "cutting_speed_m_min": 300.0,
+          "chip_load_drill_mm_flute": 0.1,
+          "chip_load_mill_mm_tooth": 0.08,
+          "plunge_factor": 0.5
+        },
+        "hss": {
+          "cutting_speed_m_min": 120.0,
+          "chip_load_drill_mm_flute": 0.08,
+          "chip_load_mill_mm_tooth": 0.06,
+          "plunge_factor": 0.5
+        }
+      },
+      "source": "Plastics Machining Handbook Engineering Thermoplastics",
+      "data_quality": "starting_value_not_validated"
+    },
+    "plastic_nylon": {
+      "id": "plastic_nylon",
+      "name": "Nylon 6/6 (Polyamide)",
+      "category": "polymer",
+      "hardness_hb": 40,
+      "density_g_cm3": 1.14,
+      "machinability_rating": 1.3,
+      "cutting_data": {
+        "carbide": {
+          "cutting_speed_m_min": 280.0,
+          "chip_load_drill_mm_flute": 0.09,
+          "chip_load_mill_mm_tooth": 0.07,
+          "plunge_factor": 0.5
+        },
+        "hss": {
+          "cutting_speed_m_min": 110.0,
+          "chip_load_drill_mm_flute": 0.07,
+          "chip_load_mill_mm_tooth": 0.05,
+          "plunge_factor": 0.5
+        }
+      },
+      "source": "Plastics Machining Handbook Polyamides",
+      "data_quality": "starting_value_not_validated"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+ISO-10303-21;
+HEADER;
+/* Corrupt STEP file without solids */
+ENDSEC;
+DATA;
+ENDSEC;
+END-ISO-10303-21;

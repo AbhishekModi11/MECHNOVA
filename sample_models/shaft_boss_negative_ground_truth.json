@@ -1,0 +1,11 @@
+{
+  "model_id": "shaft_boss_negative",
+  "description": "Base with external cylindrical boss - MUST NOT BE DETECTED AS A HOLE",
+  "expected_features": {
+    "holes": [],
+    "total_holes_count": 0,
+    "bosses_count": 1
+  },
+  "step_file": "shaft_boss_negative.step",
+  "schema_version": "1.0.0"
+}

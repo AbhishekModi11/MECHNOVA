@@ -1,0 +1,9 @@
+schema_version: "1.0.0"
+
+stock:
+  mode: "bounding_box_allowance"
+  allowance_x_mm: 4.0
+  allowance_y_mm: 4.0
+  allowance_z_top_mm: 2.0
+  allowance_z_bottom_mm: 5.0
+  material_id: "aluminum_6061"

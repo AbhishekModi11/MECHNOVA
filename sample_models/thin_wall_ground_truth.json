@@ -1,0 +1,15 @@
+{
+  "model_id": "thin_wall",
+  "description": "Part containing a thin wall of 1.2 mm between two pockets (violates 1.5 mm min limit)",
+  "expected_features": {
+    "thin_walls": [
+      {
+        "thickness_mm": 1.2,
+        "status": "suspected_issue"
+      }
+    ],
+    "total_thin_walls_count": 1
+  },
+  "step_file": "thin_wall.step",
+  "schema_version": "1.0.0"
+}

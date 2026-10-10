@@ -1,0 +1,23 @@
+{
+  "model_id": "counterbore_countersink",
+  "description": "Plate with 1 counterbore hole and 1 countersink hole",
+  "expected_features": {
+    "holes": [
+      {
+        "type": "counterbore",
+        "diameter_mm": 6.0,
+        "cbore_diameter_mm": 12.0,
+        "cbore_depth_mm": 5.0
+      },
+      {
+        "type": "countersink",
+        "diameter_mm": 5.0,
+        "csk_diameter_mm": 10.0,
+        "csk_angle_deg": 90.0
+      }
+    ],
+    "total_holes_count": 2
+  },
+  "step_file": "counterbore_countersink.step",
+  "schema_version": "1.0.0"
+}

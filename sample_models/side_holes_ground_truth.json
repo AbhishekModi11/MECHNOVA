@@ -1,0 +1,21 @@
+{
+  "model_id": "side_holes",
+  "description": "Box with through hole along non-Z axis (X direction)",
+  "expected_features": {
+    "holes": [
+      {
+        "type": "through",
+        "diameter_mm": 8.0,
+        "depth_mm": 50.0,
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "total_holes_count": 1
+  },
+  "step_file": "side_holes.step",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,28 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.11",
+  "reportMissingTypeStubs": false,
+  "reportAttributeAccessIssue": false,
+  "executionEnvironments": [
+    {
+      "root": "platform/backend",
+      "extraPaths": [
+        "src",
+        "platform/backend"
+      ]
+    },
+    {
+      "root": "frontend",
+      "extraPaths": [
+        "frontend"
+      ]
+    },
+    {
+      "root": ".",
+      "extraPaths": [
+        "src"
+      ]
+    }
+  ]
+}

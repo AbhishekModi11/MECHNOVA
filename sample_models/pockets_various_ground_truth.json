@@ -1,0 +1,23 @@
+{
+  "model_id": "pockets_various",
+  "description": "Pockets test model with closed rectangular pockets and internal corners",
+  "expected_features": {
+    "pockets": [
+      {
+        "type": "closed",
+        "depth_mm": 10.0,
+        "width_mm": 20.0,
+        "length_mm": 25.0
+      },
+      {
+        "type": "closed",
+        "depth_mm": 10.0,
+        "width_mm": 20.0,
+        "length_mm": 25.0
+      }
+    ],
+    "total_pockets_count": 2
+  },
+  "step_file": "pockets_various.step",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,5 @@
+{
+  "model_id": "broken_corrupt",
+  "description": "Corrupt file with 0 solids - tests error handling",
+  "expected_error": "STEPParseError"
+}
